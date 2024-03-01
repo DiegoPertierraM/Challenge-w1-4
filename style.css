@@ -6,7 +6,8 @@
 body,
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
@@ -36,13 +37,13 @@ li {
   list-style: none;
 }
 
-h1 + h2 {
+h1 + p {
   font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
 }
 
-header {
+body > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,6 +137,11 @@ button {
   font-size: 1rem;
 }
 
+.text-float p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
 .img-container:hover .text-float {
   display: initial;
 }
@@ -199,10 +205,15 @@ button {
   .img-container {
     height: 350px;
     width: 30vw;
+    align-items: center;
   }
 
   .img-container > img {
     width: 650px;
+  }
+
+  .text-float p {
+    margin-block-start: 1rem;
   }
 
   .desk-menu > ul > li {
